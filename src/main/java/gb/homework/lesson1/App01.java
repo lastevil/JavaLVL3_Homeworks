@@ -15,6 +15,7 @@ public class App01 {
         box.putToBox(orange2);
         box1.putToBox(apple1);
         box1.putToBox(apple2);
+        box2.putToBox(orange2);
         System.out.println("вес Апельсинов в ящике "+box.getWeight());
         System.out.println("вес Яблок в ящике "+box1.getWeight());
         System.out.println(box.compare(box1));

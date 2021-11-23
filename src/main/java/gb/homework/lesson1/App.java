@@ -23,16 +23,17 @@ public class App {
         System.out.println(c[0]+","+c[1]+","+c[2]);
 
     }
-    public static Object[] changePlaceOfArrayElements(Object[] mass, int from, int to){
-        Object change;
+
+    public static <T> T[] changePlaceOfArrayElements(T[] mass, int from, int to){
+        T change;
         change=mass[from];
         mass[from]=mass[to];
         mass[to]=change;
         return mass;
     }
-    public static ArrayList arraytoArrayList (Object [] mass){
+    public static <T> ArrayList arraytoArrayList(T[] mass){
         ArrayList a = new ArrayList();
-        for (Object m: mass) {
+        for (T m: mass) {
             a.add(m);
         }
         return a;
